@@ -1,9 +1,15 @@
-var tipStuff = {
+var base = 55;
+var service = {
   good: .2,
   fair: .15,
-  bad: .1,
-  bill: 55
+  poor: .1,
 };
 
+//leave the function anonymous
 
-console.log(tipStuff)
+function tipAmount () {
+  return "$" + base * service.good
+}
+
+//Kind of tricky...but it worked
+console.log(tipAmount(base, service.good))
