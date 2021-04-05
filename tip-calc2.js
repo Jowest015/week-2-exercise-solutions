@@ -11,4 +11,4 @@ var service = {
 
 console.log(totalAmount(base, service.good))
 
-//looks alright
+//looks alright...probably pretty messy
