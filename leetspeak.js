@@ -12,7 +12,9 @@ var alphabet = {
 function leetSpeak(string) {
   string = string || string.value.toLowerCase(); //giving the string value, taking string
   for (var i = 0; i < string.length; i++) {
-    if (alphabet[string[i]]) {//searches string, and replaces letters from alphabet object=>
+
+    if (alphabet[string[i]]) {//searches string, when alphabet found, replaces letters from alphabet object=>
+
       string = string.replace(string[i], alphabet[string[i]]);
     }
   }
