@@ -16,6 +16,10 @@ function longVowels(string) {
     if (vowels[string[i]]) {
 
       string = string.replace(string[i], vowels[string[i]]);
+    } else {
+      if (i > string.length) {
+        return;
+      }
     }
   }
   return string;
@@ -23,4 +27,4 @@ function longVowels(string) {
 
 console.log(longVowels('hello there'))
 
-//hmm not working...might be string.length value in for statement...what do?
+//hmm not working...might be string.length value in for statement...what do? yep has to be it, it just bricks the command line
